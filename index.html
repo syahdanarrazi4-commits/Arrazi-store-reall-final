@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZII STORE - Top Up Games Termurah & Terlengkap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#080c14',
+                        cardbg: '#111827',
+                        cardhover: '#1f2937',
+                        accent: '#6366f1',
+                        accentglow: '#818cf8'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkbg text-slate-100 font-sans min-h-screen flex flex-col justify-between selection:bg-accent selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="bg-cardbg/95 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50 shadow-xl">
+        <div class="max-w-6xl mx-auto px-4 py-3.5 flex justify-between items-center">
+            <a href="#" class="text-xl md:text-2xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500 flex items-center gap-2.5">
+                <i class="fa-solid fa-gamepad text-accent"></i> ZII STORE
+            </a>
+            <div class="flex items-center gap-2.5">
+                <span class="text-[11px] md:text-xs bg-emerald-500/10 text-emerald-400 px-3 py-1.5 rounded-full font-semibold border border-emerald-500/20 flex items-center gap-1.5 shadow-sm">
+                    <i class="fa-solid fa-circle text-[6px] animate-pulse"></i> 24 Jam Online
+                </span>
+                <button onclick="openLiveChat()" class="text-xs bg-accent/20 hover:bg-accent/30 text-indigo-300 px-3 py-1.5 rounded-full font-semibold border border-accent/30 transition flex items-center gap-1.5 cursor-pointer">
+                    <i class="fa-solid fa-headset"></i> Live Chat
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-6 md:py-8 flex-grow w-full">
+        
+        <!-- Hero Banner Estetik -->
+        <div class="relative overflow-hidden bg-gradient-to-r from-indigo-950 via-slate-900 to-purple-950 border border-indigo-500/30 rounded-3xl p-6 md:p-10 mb-10 shadow-2xl">
+            <div class="absolute right-0 top-0 bottom-0 w-1/2 opacity-30 md:opacity-50 pointer-events-none bg-cover bg-center mix-blend-luminosity" style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000&auto=format&fit=crop');"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-darkbg via-darkbg/90 to-transparent"></div>
+            
+            <div class="relative z-10 max-w-xl">
+                <div class="inline-flex items-center gap-1.5 bg-accent/20 text-accent font-bold px-3 py-1 rounded-lg text-xs mb-3 border border-accent/30 shadow-sm">
+                    <i class="fa-solid fa-fire text-orange-400"></i> Pusat Top Up Terpercaya & Termurah
+                </div>
+                <h1 class="text-3xl md:text-5xl font-black mb-3 text-white tracking-tight leading-tight">Top Up Game Favoritmu Mulai 5 Diamond!</h1>
+                <p class="text-slate-300 text-sm md:text-base mb-6 leading-relaxed">Layanan instan dari 5 Diamond hingga Sultan 5000 Diamond. Pembayaran lengkap via QRIS, Bank BCA, E-Wallet, dan Pulsa.</p>
+                <button onclick="document.getElementById('games-section').scrollIntoView({behavior: 'smooth'})" class="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-indigo-600/30 transition transform hover:scale-105 cursor-pointer flex items-center gap-2">
+                    <span>Pilih Game Sekarang</span> <i class="fa-solid fa-arrow-down"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Section Games -->
+        <div id="games-section" class="mb-10">
+            <h2 class="text-xl md:text-2xl font-bold mb-6 flex items-center gap-2 text-white">
+                <i class="fa-solid fa-gamepad text-accent"></i> Pilih Game & Voucher
+            </h2>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <!-- Mobile Legends -->
+                <div onclick="selectGame('Mobile Legends', 'ml')" class="bg-cardbg hover:bg-cardhover border border-slate-800 hover:border-accent rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:shadow-accent/10 hover:-translate-y-1 group">
+                    <div class="h-24 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=400&auto=format&fit=crop" alt="ML" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-3 pt-1 text-center">
+                        <div class="w-10 h-10 mx-auto -mt-6 mb-1.5 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-sm font-black text-white shadow-lg border-2 border-cardbg">
+                            ML
+                        </div>
+                        <h3 class="font-bold text-xs text-white group-hover:text-indigo-400 transition truncate">Mobile Legends</h3>
+                        <p class="text-[10px] text-slate-400 mt-0.5">Diamond & Starlight</p>
+                    </div>
+                </div>
+
+                <!-- Free Fire -->
+                <div onclick="selectGame('Free Fire', 'ff')" class="bg-cardbg hover:bg-cardhover border border-slate-800 hover:border-accent rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:shadow-accent/10 hover:-translate-y-1 group">
+                    <div class="h-24 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=400&auto=format&fit=crop" alt="FF" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-3 pt-1 text-center">
+                        <div class="w-10 h-10 mx-auto -mt-6 mb-1.5 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-sm font-black text-white shadow-lg border-2 border-cardbg">
+                            FF
+                        </div>
+                        <h3 class="font-bold text-xs text-white group-hover:text-orange-400 transition truncate">Free Fire</h3>
+                        <p class="text-[10px] text-slate-400 mt-0.5">Diamond & Member</p>
+                    </div>
+                </div>
+
+                <!-- Roblox -->
+                <div onclick="selectGame('Roblox', 'roblox')" class="bg-cardbg hover:bg-cardhover border border-slate-800 hover:border-accent rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:shadow-accent/10 hover:-translate-y-1 group">
+                    <div class="h-24 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1612287233302-461d3680d28d?q=80&w=400&auto=format&fit=crop" alt="Roblox" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-3 pt-1 text-center">
+                        <div class="w-10 h-10 mx-auto -mt-6 mb-1.5 rounded-xl bg-gradient-to-br from-red-500 to-rose-700 flex items-center justify-center text-sm font-black text-white shadow-lg border-2 border-cardbg">
+                            RBX
+                        </div>
+                        <h3 class="font-bold text-xs text-white group-hover:text-red-400 transition truncate">Roblox</h3>
+                        <p class="text-[10px] text-slate-400 mt-0.5">Robux & Pass</p>
+                    </div>
+                </div>
+
+                <!-- PUBG Mobile -->
+                <div onclick="selectGame('PUBG Mobile', 'pubg')" class="bg-cardbg hover:bg-cardhover border border-slate-800 hover:border-accent rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:shadow-accent/10 hover:-translate-y-1 group">
+                    <div class="h-24 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=400&auto=format&fit=crop" alt="PUBG" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-3 pt-1 text-center">
+                        <div class="w-10 h-10 mx-auto -mt-6 mb-1.5 rounded-xl bg-gradient-to-br from-yellow-500 to-amber-600 flex items-center justify-center text-sm font-black text-white shadow-lg border-2 border-cardbg">
+                            PUBG
+                        </div>
+                        <h3 class="font-bold text-xs text-white group-hover:text-yellow-400 transition truncate">PUBG Mobile</h3>
+                        <p class="text-[10px] text-slate-400 mt-0.5">Unknown Cash (UC)</p>
+                    </div>
+                </div>
+
+                <!-- Genshin Impact -->
+                <div onclick="selectGame('Genshin Impact', 'genshin')" class="bg-cardbg hover:bg-cardhover border border-slate-800 hover:border-accent rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:shadow-accent/10 hover:-translate-y-1 group">
+                    <div class="h-24 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?q=80&w=400&auto=format&fit=crop" alt="Genshin" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-3 pt-1 text-center">
+                        <div class="w-10 h-10 mx-auto -mt-6 mb-1.5 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-700 flex items-center justify-center text-sm font-black text-white shadow-lg border-2 border-cardbg">
+                            GI
+                        </div>
+                        <h3 class="font-bold text-xs text-white group-hover:text-cyan-400 transition truncate">Genshin Impact</h3>
+                        <p class="text-[10px] text-slate-400 mt-0.5">Genesis Crystal</p>
+                    </div>
+                </div>
+
+                <!-- Valorant -->
+                <div onclick="selectGame('Valorant', 'val')" class="bg-cardbg hover:bg-cardhover border border-slate-800 hover:border-accent rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl hover:shadow-accent/10 hover:-translate-y-1 group">
+                    <div class="h-24 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop" alt="Valorant" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                        <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-3 pt-1 text-center">
+                        <div class="w-10 h-10 mx-auto -mt-6 mb-1.5 rounded-xl bg-gradient-to-br from-rose-600 to-red-800 flex items-center justify-center text-sm font-black text-white shadow-lg border-2 border-cardbg">
+                            VAL
+                        </div>
+                        <h3 class="font-bold text-xs text-white group-hover:text-red-400 transition truncate">Valorant</h3>
+                        <p class="text-[10px] text-slate-400 mt-0.5">Valorant Points</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Transaksi Utama -->
+        <div id="transaction-box" class="hidden bg-cardbg border border-indigo-500/50 rounded-3xl p-5 md:p-8 shadow-2xl mb-8 relative animate-fade-in">
+            <div class="flex justify-between items-center mb-6 border-b border-slate-800 pb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-accent/20 flex items-center justify-center text-accent">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div>
+                        <h3 id="selected-game-title" class="text-base md:text-lg font-bold text-white">Form Top Up</h3>
+                        <p class="text-xs text-slate-400">Lengkapi data akun, nominal, & metode pembayaran</p>
+                    </div>
+                </div>
+                <button onclick="closeForm()" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white flex items-center justify-center transition cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- Kolom Kiri: Data Akun & Pembayaran -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-2">1. Masukkan Data Akun</label>
+                        <div class="space-y-3">
+                            <input type="text" id="userId" placeholder="User ID (Contoh: 12345678)" class="w-full bg-darkbg border border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-accent text-white placeholder:text-slate-500">
+                            <input type="text" id="serverId" placeholder="Server ID (Opsional / Contoh: 1234)" class="w-full bg-darkbg border border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-accent text-white placeholder:text-slate-500">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-2">3. Pilih Metode Pembayaran</label>
+                        <div class="space-y-2.5 max-h-[240px] overflow-y-auto pr-1">
+                            <!-- QRIS -->
+                            <label class="border border-slate-700 rounded-xl p-3 flex items-center justify-between cursor-pointer hover:border-accent bg-darkbg transition">
+                                <div class="flex items-center gap-3">
+                                    <input type="radio" name="payment" value="QRIS" checked class="accent-indigo-500">
+                                    <span class="text-xs font-bold text-white">QRIS (All Payment / GoPay / OVO / DANA)</span>
+                                </div>
+                                <span class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded font-semibold">Otomatis</span>
+                            </label>
+                            <!-- Bank BCA -->
+                            <label class="border border-slate-700 rounded-xl p-3 flex items-center justify-between cursor-pointer hover:border-accent bg-darkbg transition">
+                                <div class="flex items-center gap-3">
+                                    <input type="radio" name="payment" value="BCA" class="accent-indigo-500">
+                                    <span class="text-xs font-bold text-white">Transfer Bank BCA (Rekening Anda)</span>
+                                </div>
+                                <span class="text-[10px] bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded font-semibold">Manual / WA</span>
+                            </label>
+                            <!-- E-Wallet -->
+                            <label class="border border-slate-700 rounded-xl p-3 flex items-center justify-between cursor-pointer hover:border-accent bg-darkbg transition">
+                                <div class="flex items-center gap-3">
+                                    <input type="radio" name="payment" value="E-Wallet" class="accent-indigo-500">
+                                    <span class="text-xs font-bold text-white">E-Wallet (DANA / OVO / GOPAY)</span>
+                                </div>
+                            </label>
+                            <!-- Pulsa -->
+                            <label class="border border-slate-700 rounded-xl p-3 flex items-center justify-between cursor-pointer hover:border-accent bg-darkbg transition">
+                                <div class="flex items-center gap-3">
+                                    <input type="radio" name="payment" value="Pulsa" class="accent-indigo-500">
+                                    <span class="text-xs font-bold text-white">Pulsa Telkomsel / Indosat</span>
+                                </div>
+                                <span class="text-[10px] bg-amber-500/10 text-amber-400 px-2 py-0.5 rounded font-semibold">+fee</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Pilih Nominal (Dari 5 s.d 5000 Diamond) -->
+                <div class="lg:col-span-7 flex flex-col justify-between">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-2">2. Pilih Nominal (Dari 5 s.d 5000 Diamond/Unit)</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6 max-h-[300px] overflow-y-auto pr-1" id="nominal-list">
+                            <!-- Injected by Javascript -->
+                        </div>
+                    </div>
+
+                    <button onclick="checkoutToWhatsApp()" class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold py-4 rounded-xl shadow-lg shadow-emerald-600/30 transition text-center cursor-pointer flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> <span>Pesan & Bayar via WhatsApp Admin</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tombol Bantuan & Lapor Kendala -->
+        <div class="bg-cardbg border border-slate-800 rounded-3xl p-6 md:p-8 text-center shadow-xl">
+            <h3 class="text-lg md:text-xl font-bold mb-2 text-white">Mengalami Kendala Top Up / Belum Masuk?</h3>
+            <p class="text-xs md:text-sm text-slate-400 mb-6 max-w-xl mx-auto">Customer Service kami siap membantu 24 jam penuh. Laporkan masalah transaksi atau kendala akun Anda melalui tombol di bawah.</p>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://wa.me/6283873610309?text=Halo%20Admin%20Zii%20Store,%20saya%20mau%20lapor%20kendala%20transaksi%20top%20up." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-xl shadow-lg shadow-emerald-600/20 transition flex items-center gap-2 text-xs md:text-sm">
+                    <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Admin (Report)
+                </a>
+                <button onclick="openLiveChat()" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold px-6 py-3 rounded-xl border border-slate-700 transition flex items-center gap-2 text-xs md:text-sm cursor-pointer">
+                    <i class="fa-solid fa-headset text-accent"></i> Live Chat Kendala
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-cardbg border-t border-slate-800 py-6 text-center text-xs text-slate-400 mt-10">
+        <p>&copy; 2026 Zii Store. All rights reserved. Solusi Top Up Game Terpercaya & Termurah.</p>
+    </footer>
+
+    <!-- Modal Live Chat -->
+    <div id="liveChatModal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div class="bg-cardbg border border-slate-700 rounded-3xl max-w-md w-full p-6 shadow-2xl relative animate-fade-in">
+            <div class="flex justify-between items-center mb-4 border-b border-slate-800 pb-3">
+                <div class="flex items-center gap-2 text-accent font-bold">
+                    <i class="fa-solid fa-headset"></i> Live Chat Bantuan Zii Store
+                </div>
+                <button onclick="closeLiveChat()" class="text-slate-400 hover:text-white cursor-pointer"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+            <div class="space-y-3 mb-4 text-xs text-slate-300">
+                <div class="bg-darkbg p-3 rounded-xl border border-slate-800">
+                    <p class="font-bold text-accent mb-1">Admin Zii Store:</p>
+                    <p>Halo Kak! Ada kendala apa dengan pesanan atau top up game-nya? Silakan tuliskan detail kendala atau langsung hubungi WhatsApp Admin kami di bawah.</p>
+                </div>
+            </div>
+            <div class="space-y-3">
+                <textarea id="complaintText" rows="3" placeholder="Tuliskan nomor pesanan atau kendala Anda di sini..." class="w-full bg-darkbg border border-slate-700 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-accent placeholder:text-slate-500"></textarea>
+                <button onclick="sendComplaintWhatsApp()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl text-xs transition flex items-center justify-center gap-2 cursor-pointer">
+                    <i class="fa-brands fa-whatsapp"></i> Kirim Laporan ke WhatsApp Admin
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        const nominalData = {
+            'ml': [
+                { name: '5 Diamonds', price: 'Rp 1.500' },
+                { name: '10 Diamonds', price: 'Rp 3.000' },
+                { name: '50 Diamonds', price: 'Rp 14.000' },
+                { name: '86 Diamonds', price: 'Rp 20.000' },
+                { name: '172 Diamonds', price: 'Rp 40.000' },
+                { name: '257 Diamonds', price: 'Rp 60.000' },
+                { name: '514 Diamonds', price: 'Rp 120.000' },
+                { name: '1050 Diamonds', price: 'Rp 240.000' },
+                { name: '2500 Diamonds', price: 'Rp 580.000' },
+                { name: '5000 Diamonds', price: 'Rp 1.150.000' }
+            ],
+            'ff': [
+                { name: '5 Diamonds', price: 'Rp 1.000' },
+                { name: '10 Diamonds', price: 'Rp 2.000' },
+                { name: '50 Diamonds', price: 'Rp 7.500' },
+                { name: '70 Diamonds', price: 'Rp 10.000' },
+                { name: '140 Diamonds', price: 'Rp 20.000' },
+                { name: '355 Diamonds', price: 'Rp 50.000' },
+                { name: '720 Diamonds', price: 'Rp 100.000' },
+                { name: '1450 Diamonds', price: 'Rp 200.000' },
+                { name: '2500 Diamonds', price: 'Rp 350.000' },
+                { name: '5000 Diamonds', price: 'Rp 690.000' }
+            ],
+            'roblox': [
+                { name: '5 Robux', price: 'Rp 1.200' },
+                { name: '10 Robux', price: 'Rp 2.500' },
+                { name: '50 Robux', price: 'Rp 9.000' },
+                { name: '100 Robux', price: 'Rp 17.000' },
+                { name: '400 Robux', price: 'Rp 68.000' },
+                { name: '800 Robux', price: 'Rp 135.000' },
+                { name: '1700 Robux', price: 'Rp 275.000' },
+                { name: '4500 Robux', price: 'Rp 680.000' },
+                { name: '5000 Robux', price: 'Rp 750.000' }
+            ],
+            'pubg': [
+                { name: '5 UC', price: 'Rp 1.500' },
+                { name: '10 UC', price: 'Rp 3.000' },
+                { name: '60 UC', price: 'Rp 15.000' },
+                { name: '325 UC', price: 'Rp 75.000' },
+                { name: '660 UC', price: 'Rp 150.000' },
+                { name: '1800 UC', price: 'Rp 400.000' },
+                { name: '3850 UC', price: 'Rp 850.000' },
+                { name: '5000 UC', price: 'Rp 1.100.000' }
+            ],
+            'genshin': [
+                { name: '60 Genesis', price: 'Rp 15.000' },
+                { name: '300 Genesis', price: 'Rp 75.000' },
+                { name: '980 Genesis', price: 'Rp 230.000' },
+                { name: '1980 Genesis', price: 'Rp 450.000' },
+                { name: '3280 Genesis', price: 'Rp 750.000' },
+                { name: '5000 Genesis', price: 'Rp 1.150.000' }
+            ],
+            'val': [
+                { name: '50 Points', price: 'Rp 6.000' },
+                { name: '100 Points', price: 'Rp 12.000' },
+                { name: '475 Points', price: 'Rp 50.000' },
+                { name: '1000 Points', price: 'Rp 100.000' },
+                { name: '2050 Points', price: 'Rp 200.000' },
+                { name: '3650 Points', price: 'Rp 350.000' },
+                { name: '5000 Points', price: 'Rp 480.000' }
+            ]
+        };
+
+        let selectedGameName = '';
+        let selectedNominal = '';
+
+        function selectGame(gameName, gameCode) {
+            selectedGameName = gameName;
+            document.getElementById('selected-game-title').innerText = 'Top Up ' + gameName;
+            
+            const container = document.getElementById('nominal-list');
+            container.innerHTML = '';
+
+            nominalData[gameCode].forEach((item, index) => {
+                const div = document.createElement('div');
+                div.className = `border border-slate-700/80 rounded-xl p-3 cursor-pointer hover:border-accent bg-darkbg transition flex flex-col justify-between ${index === 0 ? 'border-accent bg-indigo-950/40 ring-1 ring-accent' : ''}`;
+                div.innerHTML = `
+                    <div class="font-bold text-xs md:text-sm text-white">${item.name}</div>
+                    <div class="text-xs text-accent mt-2 font-extrabold">${item.price}</div>
+                `;
+                if(index === 0) selectedNominal = `${item.name} (${item.price})`;
+
+                div.onclick = () => {
+                    document.querySelectorAll('#nominal-list > div').forEach(el => {
+                        el.classList.remove('border-accent', 'bg-indigo-950/40', 'ring-1', 'ring-accent');
+                    });
+                    div.classList.add('border-accent', 'bg-indigo-950/40', 'ring-1', 'ring-accent');
+                    selectedNominal = `${item.name} (${item.price})`;
+                };
+                container.appendChild(div);
+            });
+
+            document.getElementById('transaction-box').classList.remove('hidden');
+            document.getElementById('transaction-box').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function closeForm() {
+            document.getElementById('transaction-box').classList.add('hidden');
+        }
+
+        function checkoutToWhatsApp() {
+            const userId = document.getElementById('userId').value;
+            const serverId = document.getElementById('serverId').value;
+            const paymentMethod = document.querySelector('input[name="payment"]:checked').value;
+
+            if(!userId) {
+                alert('Mohon masukkan User ID game terlebih dahulu!');
+                return;
+            }
+
+            const adminWhatsAppNumber = "6283873610309"; 
+
+            let message = `Halo Admin Zii Store, saya ingin melakukan pemesanan top up:%0A%0A` +
+                          `🎮 *Game:* ${selectedGameName}%0A` +
+                          `📦 *Nominal:* ${selectedNominal}%0A` +
+                          `🆔 *User ID:* ${userId}%0A` +
+                          (serverId ? `📌 *Server ID:* ${serverId}%0A` : ``) +
+                          `💳 *Metode Pembayaran:* ${paymentMethod}%0A%0A` +
+                          `Mohon diproses ya kak!`;
+
+            window.open(`https://wa.me/${adminWhatsAppNumber}?text=${message}`, '_blank');
+        }
+
+        function openLiveChat() {
+            document.getElementById('liveChatModal').classList.remove('hidden');
+        }
+
+        function closeLiveChat() {
+            document.getElementById('liveChatModal').classList.add('hidden');
+        }
+
+        function sendComplaintWhatsApp() {
+            const complaint = document.getElementById('complaintText').value;
+            const adminWhatsAppNumber = "6283873610309";
+            let message = `Halo Admin Zii Store, saya ingin melaporkan kendala:%0A%0A${complaint}`;
+            window.open(`https://wa.me/${adminWhatsAppNumber}?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>
